@@ -1,0 +1,42 @@
+\section{Introduction to Sparisty Analysis}
+
+Given the prevalence and the strength of noise in weak lensing analysis, to successfully reconstruct physical information from weak lensing data, one may be prompted to use \emph{sparsity}. A \emph{sparse} model indicates only a relatively small amount of parameters controls
+the behavior of the system. In weak lensing and specifically 3D reconstruction, we apply this idea to assert that galaxy clusters are only sparsely 
+distributed in the present universe. 
+
+To implement the sparisty prior in an analysis, first consider the familiar linear regression model: 
+
+\begin{equation}
+  y_i = \beta_0 + \sum^{p}_{j=1} x_{ij}\beta_j + e_i
+\end{equation}
+where $\beta_0$ and $\beta = (\beta_1, \beta_2, \ldots, \beta_p)$ are unknown multidimensional linear parameters of some model. $y_i$'s are measured values, and $e_i$'s are errors of estimation.
+
+To retrieve the best predicted model, one acquire an estimation of $\beta$ parameters by mininizing the least-squares objective function. 
+\begin{equation}
+  \mathrm{minimize}_{\beta, \beta_0} \sum^N_{i=1}(y_i - \beta_0 - \sum^{p}_{j=1}x_{ij}\beta_j)^2
+\end{equation}
+
+However, when the number of undertermined parameters is large, such an objective function may yield nonzero value for the $\beta$ vector and yield degenerate solutions. This makes the interpretation of the result difficult. 
+A solution is just to \emph{regularize} the estimation process. The regime we will be working with in this work is called the Lasso regularization, which uses the Lasso Estimator:
+
+\begin{equation}
+  \mathrm{minimize}_{\beta_0, \beta}\{\frac{1}{2N} \sum^N_{i=1}(y_i-\beta_0 - \sum^{p}_{j=1}x_{ij}\beta_j)^2\}
+\end{equation}
+subject to 
+\[\lVert \beta \lVert_1\leq t.\]
+Where $\lVert \beta \lVert_1$ represents the $l_1$-norm which is the sum of the absolute values of each entries in $\beta$. 
+
+In matrix form, one may have
+\begin{equation}
+  \mathrm{minimize}_{\beta_0, \beta}\Bigl\{\frac{1}{2N} \lVert \bf{y} - \beta_0 \bf{1} - \bf{X}\beta\lVert^2_2\Bigl\}
+\end{equation}
+
+subject to 
+\[\lVert \beta \lVert_1\leq t.\] 
+
+One can also rewrite this into the Lagrangian form
+\begin{equation}
+  \mathrm{minimize}_{\beta\in \mathbb{R}^p}\Bigl\{ \frac{1}{2N}\lVert \bf{y} - \bf{X}\beta \lVert^2_2 + \lambda \lVert\beta \lVert_1\Bigl\}
+\end{equation}
+
+Here then $\lambda \geq 0$ now controls the degree of sparisty we impose on the minimization, with larger $\lambda$ correspond to stronger sparse condition. 

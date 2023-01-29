@@ -1,0 +1,53 @@
+\documentclass[12pt,lot,lof]{puthesis_undergraduate}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{physics}
+%\usepackage{setspace}
+%\usepackage[round, longnamesfirst]{natbib} % for nice bibliography
+
+\input{newcommands}
+
+
+\title{Systematic Analysis in Three-Dimensional Reconstruction of Weak-Lensing Mass Maps
+with a Sparsity Prior}
+\submitted{May 2023}  %graduation date
+\author{Shouzhuo Yang}
+\advisor{Naoki Yoshida} %
+\dedication{To me}
+
+
+\abstract{
+\input{./Chapters/abstract}
+}
+
+\acknowledgements{
+\input{./Chapters/acknow}
+}
+
+\begin{document}
+\chapter{Introduction}\label{ch:intro}  %insert chapter title
+
+Hello World. See \cite{A01}.
+
+\input{./Chapters/intro} % and path to the .tex file (no need to include .tex)
+
+\chapter{Development of the Department of Operations Research and Financial Engineering}  %continue adding chapter titles
+\input{./Chapters/development}
+\input{./Chapters/sparsity}
+\chapter{Analysis of Problem}
+\input{./Chapters/analysis}
+
+\appendix
+\chapter{Code}
+\input{./Chapters/code}
+
+
+\bibliographystyle{abbrv}
+\bibliography{refs} \label{bib}
+
+
+\end{document}

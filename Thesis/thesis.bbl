@@ -1,0 +1,63 @@
+\begin{thebibliography}{10}
+
+\bibitem{A04}
+K.~Aas.
+\newblock Modelling the dependence structure of financial assets: A survey of
+  four copulas.
+\newblock Technical report, Norwegian Computing Center, December 2004.
+\newblock SAMBA/22/04.
+
+\bibitem{ARS03}
+E.~Altman, A.~Resti, and A.~Sironi.
+\newblock Default recovery rates in credit risk modeling: A review of the
+  literature and empirical evidence.
+\newblock Working paper, New York University, December 2003.
+
+\bibitem{A01}
+M.~Ammann.
+\newblock {\em Credit Risk Valuation}.
+\newblock Springer, 2nd edition, 2001.
+
+\bibitem{AMM05}
+A.~Antonov, S.~Mechkov, and T.~Misirpashaev.
+\newblock Analytical techniques for synthetic cdos and credit default risk
+  measures.
+\newblock Work in progress, NumeriX, May 2005.
+
+\bibitem{BR02}
+T.~R. Bielecki and M.~Rutkowski.
+\newblock {\em Credit Risk: Modeling, Valuation and Hedging}.
+\newblock Springer, 2002.
+
+\bibitem{B95}
+P.~Billingsley.
+\newblock {\em Probability and Measure}.
+\newblock Wiley, 3rd edition, 1995.
+
+\bibitem{BBM05}
+R.~Blanco, S.~Brennan, and I.~W. Marsh.
+\newblock An empirical analysis of the dynamic relation between
+  investment-grade bonds and credit default swaps.
+\newblock {\em Journal of Finance}, 60(5):2255--2281, 2005.
+
+\bibitem{C75}
+E.~\c{C}inlar.
+\newblock {\em Introduction to Stochastic Processes}.
+\newblock Prentice-Hall, 1975.
+
+\bibitem{CFPS04}
+P.~Cotton, J.-P. Fouque, G.~Papanicolaou, and R.~Sircar.
+\newblock Stochastic volatility corrections for interest rate derivatives.
+\newblock {\em Mathematical Finance}, 14(2):173--200, 2004.
+
+\bibitem{DG01}
+D.~Duffie and N.~G\^{a}rleanu.
+\newblock Risk and valuation of collateralized debt obligations.
+\newblock {\em Financial Analysts Journal}, 57(1):41--59, 2001.
+
+\bibitem{MR97}
+M.~Musiela and M.~Rutkowski.
+\newblock {\em Martingale Methods in Financial Modelling}.
+\newblock Springer, 1997.
+
+\end{thebibliography}

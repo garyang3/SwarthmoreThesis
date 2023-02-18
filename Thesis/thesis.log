@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.5)  28 JAN 2023 21:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.5)  18 FEB 2023 15:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -198,25 +198,25 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 ] [5
 
-] (/Users/a1/Documents/SwarthmoreThesis/Thesis/thesis.toc)
+] (/Users/a1/Documents/SwarthmoreThesis/Thesis/thesis.toc [6
+
+
+])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [6
-
-
-] (/Users/a1/Documents/SwarthmoreThesis/Thesis/thesis.lot)
+ [7] (/Users/a1/Documents/SwarthmoreThesis/Thesis/thesis.lot)
 \tf@lot=\write4
 \openout4 = `thesis.lot'.
 
- [7
+ [8
 
 
 ] (/Users/a1/Documents/SwarthmoreThesis/Thesis/thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [8
+ [9
 
 
 ] (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -247,36 +247,36 @@ Chapter 1.
 Chapter 2.
 (./Chapters/development.tex [2
 
-] [3] [4] [5]) (./Chapters/sparsity.tex [6]) [7]
+] [3] [4] [5]) (./Chapters/sparsity.tex [6] [7]) [8] [9]
 Chapter 3.
 (./Chapters/analysis.tex
-<./Figures/dens.pdf, id=67, 470.75874pt x 375.4025pt>
+<./Figures/dens.pdf, id=77, 470.75874pt x 375.4025pt>
 File: ./Figures/dens.pdf Graphic file (type pdf)
 <use ./Figures/dens.pdf>
 Package pdftex.def Info: ./Figures/dens.pdf  used on input line 9.
 (pdftex.def)             Requested size: 346.89731pt x 276.63068pt.
- [8
+ [10
 
-] [9 </Users/a1/Documents/SwarthmoreThesis/Thesis/./Figures/dens.pdf>]) [10]
+] [11 </Users/a1/Documents/SwarthmoreThesis/Thesis/./Figures/dens.pdf>]) [12]
 Appendix A.
-(./Chapters/code.tex [11
+(./Chapters/code.tex [13
 
-]) (/Users/a1/Documents/SwarthmoreThesis/Thesis/thesis.bbl [12] [13
+]) (/Users/a1/Documents/SwarthmoreThesis/Thesis/thesis.bbl [14] [15
 
-]) [14] (/Users/a1/Documents/SwarthmoreThesis/Thesis/thesis.aux) ) 
+]) [16] (/Users/a1/Documents/SwarthmoreThesis/Thesis/thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 3620 strings out of 480608
- 51940 string characters out of 5903631
- 295067 words of memory out of 5000000
- 19439 multiletter control sequences out of 15000+600000
+ 3625 strings out of 480608
+ 52013 string characters out of 5903631
+ 295098 words of memory out of 5000000
+ 19444 multiletter control sequences out of 15000+600000
  543181 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,8n,40p,1140b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /Users/a1/Documents/SwarthmoreThesis/Thesis/thesis.pdf (22 pages, 217552 bytes).
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /Users/a1/Documents/SwarthmoreThesis/Thesis/thesis.pdf (25 pages, 229719 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 109 compressed objects within 2 object streams
+ 169 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

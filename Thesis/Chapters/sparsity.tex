@@ -37,6 +37,25 @@ subject to
 One can also rewrite this into the Lagrangian form
 \begin{equation}
   \mathrm{minimize}_{\beta\in \mathbb{R}^p}\Bigl\{ \frac{1}{2N}\lVert \bf{y} - \bf{X}\beta \lVert^2_2 + \lambda \lVert\beta \lVert_1\Bigl\}
+  \label{Lasso Regression}
 \end{equation}
 
-Here then $\lambda \geq 0$ now controls the degree of sparisty we impose on the minimization, with larger $\lambda$ correspond to stronger sparse condition. 
+Here then $\lambda \geq 0$ now controls the degree of sparisty we impose on the minimization, with larger $\lambda$ correspond to stronger sparse condition. For our application, we will use a slightly modified version of the Lasso regression regime where $\lambda$ is 
+normalized with respect to standard deviation of the underlying shear field estimation. 
+
+\section{Adaptative Lasso Regression}
+In this section we describe the Adaptive Lasso Regression algorithm introduced in \cite{AdaLASSO-Zou2006}. In (Fan and LI 2001), it was discovered the lasso algorithm has biased estimates for large coefficients. Meinshausen and Bühlmann (2004) also sproved even the optimal $\lambda$ value yields in consistent variable selection results, meaning that the regression algorithm sometimes picks up signal from the noise. These are all signs that the  ``traditional'' lasso regression in Eqn. \ref{Lasso Regression} does not satisfy the oracle property, which is the tendancy that a penalized (e.g. the Lasso $l_1$ norm penalty or the Smoothly Clipped Absolute Deviation penalty) regression estimator being able to recover the true underlying model consistently. The nature of the adaptive Lasso algorithm is to use an adaptive weight to penalize different projection coeffcients in the $l_1$ penalty. 
+
+The adaptive lasso regression algorithm can be described as follows. After getting the Lasso estimator $\hat{\beta}_{\mathrm{Lasso}}$ by minimizing Eqn. \ref{Lasso Regression}, we then define the adaptive weight, with $\tau=2$ in this work (although it can be any postive real number):
+
+\begin{equation}
+  \hat{w} = \frac{1}{\lvert \hat{\beta}_{\mathrm{Lasso}} \rvert^\tau}.
+  \label{weightFactor}
+\end{equation}
+This adaptive weight enhance the shrinkage in for the coefficients with smaller amplitudes, as can be seen the inverse of the norm of the preliminary estimates. 
+The adaptive Lasso estimator is then acquire by minimizing 
+\begin{equation}
+  \hat{\beta'} =  \mathrm{arg}\text{ } \mathrm{minimize}_{\beta'\in \mathbb{R}^p}\Bigl\{ \frac{1}{2}\sum\lVert \bf{y} - \bf{X}\beta' \lVert^2_2 + \lambda_{\mathrm{ada}} \lVert\hat{w} \circ \beta' \lVert_1\Bigl\},
+  \label{adaptiveLasso}
+\end{equation}
+where $\lambda_{\mathrm{ada}}$ is the adaptive Lasso penalty parameter, which we have taken to be the same as $\lambda$ in Eqn. \ref{Lasso Regression}. ``$\circ$'' refers to the element-wise product. 
